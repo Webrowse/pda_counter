@@ -106,7 +106,6 @@ pub struct Counter {
     pub count: u64,
 }
 
-
 // ──・❥ ────・❥ ────・❥ ────・❥ ────Events────・❥ ────・❥ ────・❥ ────・❥ ────・❥ ──
 
 //Init event
