@@ -1,5 +1,8 @@
 # PDA Counter — Solana Anchor Project
 
+Version: 0.1.0  
+License: MIT
+
 This project is a minimal smart contract on the Solana blockchain, built using the Anchor framework. It allows users to create and manage their own on-chain counter using a Program Derived Address (PDA). Each counter is tied to a specific user and supports incrementing, resetting, and automatic closure.
 
 ---
@@ -60,15 +63,17 @@ Below is a screenshot of the successful test run using `anchor test`:
 
 ## Folder Structure
 
-pda_counter/
-├── programs/
-│   └── pda_counter/       # Rust smart contract
-│       └── src/lib.rs
-├── tests/
-│   └── pda_counter.js     # JavaScript test suite
-├── Anchor.toml
-├── Cargo.toml
-└── README.md
+pda_counter  
+├── programs/  
+│   └── pda_counter/        Rust smart contract  
+│       └── src/lib.rs  
+├── tests/  
+│   └── pda_counter.js      JavaScript test suite  
+├── Anchor.toml             Anchor config  
+├── Cargo.toml              Workspace config  
+├── package.json            JS dependencies and scripts  
+├── LICENSE                 MIT license  
+└── README.md               This file  
 
 ---
 

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), with simplified entries suitable for individual or small-team open-source projects.
 
+
+# pda_counter
+
+**Version:** `v0.1.0` • Solana + Anchor • Rust-based PDA counter with CLI tests
+
+This project demonstrates a minimal Solana smart contract written in Rust (using Anchor) that tracks and updates a persistent counter using Program Derived Addresses (PDAs). Built for developers who want to understand on-chain account state, transaction flows, and client-side testing.
+
+
 ---
 
 ## [0.1.0] - 2025-07-28
