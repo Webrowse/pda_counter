@@ -3,6 +3,9 @@
 Version: 0.1.0  
 License: MIT
 
+[![Crates.io](https://img.shields.io/crates/v/pda-counter.svg)](https://crates.io/crates/pda-counter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This project is a minimal smart contract on the Solana blockchain, built using the Anchor framework. It allows users to create and manage their own on-chain counter using a Program Derived Address (PDA). Each counter is tied to a specific user and supports incrementing, resetting, and automatic closure.
 
 ---
