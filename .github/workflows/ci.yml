@@ -1,48 +1,35 @@
 name: Anchor CI
-
 on:
   push:
   pull_request:
-
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
+        uses: actions/checkout@v6
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
           override: true
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-
       - name: Install Solana
         run: |
           SOLANA_VERSION=1.18.26
           curl -L https://github.com/solana-labs/solana/releases/download/v$SOLANA_VERSION/solana-release-x86_64-unknown-linux-gnu.tar.bz2 -o solana.tar.bz2
           tar -xjf solana.tar.bz2
-          echo "$PWD/solana-release/solana-release/bin" >> $GITHUB_PATH
-
+          echo "$PWD/solana-release/bin" >> $GITHUB_PATH
       - name: Verify Solana
         run: solana --version
-
-
-
-
       - name: Install Anchor
         run: |
           cargo install --git https://github.com/coral-xyz/anchor --tag v0.31.1 anchor-cli --locked
           anchor --version
-
       - name: Anchor build
         run: anchor build
-
       - name: Anchor test
         run: anchor test
