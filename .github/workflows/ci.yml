@@ -29,7 +29,11 @@ jobs:
           curl -L https://github.com/solana-labs/solana/releases/download/v$SOLANA_VERSION/solana-release-x86_64-unknown-linux-gnu.tar.bz2 -o solana.tar.bz2
           tar -xjf solana.tar.bz2
           echo "$PWD/solana-release/solana-release/bin" >> $GITHUB_PATH
-          solana --version
+
+      - name: Verify Solana
+        run: solana --version
+
+
 
 
       - name: Install Anchor
