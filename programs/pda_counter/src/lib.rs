@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 //program ID, prewritten with anchor init, but it can also be retrieve from target/deploy/*.json
-declare_id!("3mQdn2TX5x4sX5Niisy6Q5B8yHDqtGxvYUXj58DCcuJ7");
+declare_id!("HtBQgEnjihf4ykWTsJexCALyBydZia8F3LVJmSNNApsN");
 
 #[program]
 pub mod pda_counter {
