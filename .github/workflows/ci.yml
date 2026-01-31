@@ -29,7 +29,11 @@ jobs:
       - name: Install Node Dependencies
         run: |
           yarn install
-          # Or use: npm install
+
+      - name: Generate Keypair for Testing
+        run: |
+          source $HOME/.cargo/env
+          solana-keygen new --no-bip39-passphrase
       
       - name: Anchor Build
         run: |
