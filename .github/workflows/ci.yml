@@ -43,4 +43,4 @@ jobs:
       - name: Anchor Test
         run: |
           source $HOME/.cargo/env
-          anchor test
+          anchor test --detach
